@@ -1,0 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  font-size: 5em;
+  text-decoration: none !important;
+  background: linear-gradient(to right, green, #70bd3a, #ffffff50 80%);
+  background-position-x: 100%;
+  background-size: 500%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: 0.5s;
+  font-weight: bold;
+}
+.title span {
+  background: url("../image/leaves.jpg");
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  background-size: 1em;
+  background-position: 50% 50%;
+  transition: 0.5s;
+}
+.title:hover {
+  background-position-x: 60%;
+}
+.title:hover span {
+  background-size: 1.5em;
+}
+.title:active {
+  background-position-x: 0%;
+}
+.title:active span {
+  background-size: 2em;
+}
+
+.blob {
+  transition: 0.1s;
+  transition: 0.5s;
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  width: 100vw;
+  --time: 20s;
+  --amount: 10;
+  --fill: #365217b6;
+}
+
+body:hover:not(:focus) .blob {
+  --fill: #37521767 !important;
+}
+
+body:active .blob {
+  --fill: red !important;
+}
+
+#home {
+  margin-top: -10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}/*# sourceMappingURL=main.css.map */
