@@ -1,0 +1,91 @@
+/**
+ Created at: 06/12/2021 21:58:10 Saturday
+ Modified at: 09/17/2021 10:28:35 PM Friday
+ **/
+
+.logo
+  display: inline-block
+  margin-right: -0.11em
+  position: relative
+  width: 0.8em
+  height: 0.5em
+
+  $lineHeight: 0.07em
+  --line-rotation: 45deg
+
+  .line
+    --s: 1
+    position: relative
+    height: $lineHeight
+    background: var(--logo-bg)
+    width: 0.594em
+    margin-bottom: -$lineHeight
+    transform: rotate(var(--line-rotation)) scaleX(var(--s))
+    transition: .5s
+
+    .corner
+      $deslocationVal: 0.0003em
+
+      position: absolute
+      width: calc(#{$lineHeight})
+      height: calc(#{$lineHeight})
+      background: linear-gradient(to var(--side), transparent 0%, transparent 50%, var(--logo-bg) 50%, var(--logo-bg) 100%)
+
+      $cornerDeslocation: calc((#{$lineHeight} * -1) + #{$deslocationVal})
+      &:nth-child(1)
+        --side: bottom right
+        left: $cornerDeslocation
+      &:nth-child(2)
+        --side: top left
+        right: calc((#{$lineHeight} * -1) + (#{$deslocationVal} * 2))
+
+  .x,.y
+    transform: translateY(0.22em)
+    width: 0
+    height: 0
+
+  .x
+    .line
+      &:nth-child(2)
+        --line-rotation: -45deg
+
+  .y
+    position: relative
+    left: 0.2em
+
+    .bg
+      $size: 0.04em
+
+      position: absolute
+      width: calc(100% + 0.1em)
+      height: calc(100% + 0.1em)
+      top: 0
+      left: 0
+      background: blue
+      height: calc(#{$lineHeight} + #{$size})
+      background: var(--bg)
+      overflow: hidden
+      width: calc(0.594em + #{$size})
+      transform: rotate(var(--line-rotation))
+
+    .line
+      &:nth-child(2)
+        position: relative
+        top: -0.02em
+        --line-rotation: -45deg
+        width: 0.29em
+        top: -0.106em
+        left: 0.255em
+
+        .corner:nth-child(1)
+          display: none
+
+  &.start
+    .x, .y
+      .line:nth-child(2)
+        --s: 0.0
+
+    .y
+      .line:nth-child(2)
+        top: 0
+        left: 0.15em

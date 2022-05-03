@@ -1,11 +1,105 @@
+/**
+ * Created at: 06/12/2021 21:58:10 Saturday
+ * Modified at: 09/17/2021 10:28:35 PM Friday
+ * **/
+.logo {
+  display: inline-block;
+  margin-right: -0.11em;
+  position: relative;
+  width: 0.8em;
+  height: 0.5em;
+  --line-rotation: 45deg;
+}
+.logo .line {
+  --s: 1;
+  position: relative;
+  height: 0.07em;
+  background: var(--logo-bg);
+  width: 0.594em;
+  margin-bottom: -0.07em;
+  transform: rotate(var(--line-rotation)) scaleX(var(--s));
+  transition: 0.5s;
+}
+.logo .line .corner {
+  position: absolute;
+  width: calc(0.07em);
+  height: calc(0.07em);
+  background: linear-gradient(to var(--side), transparent 0%, transparent 50%, var(--logo-bg) 50%, var(--logo-bg) 100%);
+}
+.logo .line .corner:nth-child(1) {
+  --side: bottom right;
+  left: calc((0.07em * -1) + 0.0003em);
+}
+.logo .line .corner:nth-child(2) {
+  --side: top left;
+  right: calc((0.07em * -1) + (0.0003em * 2));
+}
+.logo .x, .logo .y {
+  transform: translateY(0.22em);
+  width: 0;
+  height: 0;
+}
+.logo .x .line:nth-child(2) {
+  --line-rotation: -45deg;
+}
+.logo .y {
+  position: relative;
+  left: 0.2em;
+}
+.logo .y .bg {
+  position: absolute;
+  width: calc(100% + 0.1em);
+  height: calc(100% + 0.1em);
+  top: 0;
+  left: 0;
+  background: blue;
+  height: calc(0.07em + 0.04em);
+  background: var(--bg);
+  overflow: hidden;
+  width: calc(0.594em + 0.04em);
+  transform: rotate(var(--line-rotation));
+}
+.logo .y .line:nth-child(2) {
+  position: relative;
+  top: -0.02em;
+  --line-rotation: -45deg;
+  width: 0.29em;
+  top: -0.106em;
+  left: 0.255em;
+}
+.logo .y .line:nth-child(2) .corner:nth-child(1) {
+  display: none;
+}
+.logo.start .x .line:nth-child(2), .logo.start .y .line:nth-child(2) {
+  --s: 0.0;
+}
+.logo.start .y .line:nth-child(2) {
+  top: 0;
+  left: 0.15em;
+}
+
+:root {
+  --color:#8888ff;
+  --color-accent:#8888ff4f;
+  --color-bg:#333;
+  --color-bg-secondary:#555;
+  --color-link:#8888ff;
+  --color-secondary:#e20de9;
+  --color-secondary-accent:#e20de94f;
+  --color-shadow:#bbbbbb20;
+  --color-table:#8888ff;
+  --color-text:#f7f7f7;
+  --color-text-secondary:#aaa;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 .title {
-  font-size: 5em;
+  font-size: 4em;
   text-decoration: none !important;
-  background: linear-gradient(to right, green, #70bd3a, #ffffff50 80%);
+  background: linear-gradient(to right, #88f, #5656bd, #88f 80%);
   background-position-x: 100%;
   background-size: 500%;
   -webkit-background-clip: text;
@@ -13,27 +107,36 @@ html {
   color: transparent;
   transition: 0.5s;
   font-weight: bold;
+  animation: animTitle 10s infinite alternate-reverse ease-in-out;
 }
 .title span {
   background: url("../image/leaves.jpg");
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  background-size: 1em;
-  background-position: 50% 50%;
   transition: 0.5s;
 }
-.title:hover {
-  background-position-x: 60%;
+@-webkit-keyframes animTitle {
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position-x: 60%;
+  }
+  100% {
+    background-position-x: 0%;
+  }
 }
-.title:hover span {
-  background-size: 1.5em;
-}
-.title:active {
-  background-position-x: 0%;
-}
-.title:active span {
-  background-size: 2em;
+@keyframes animTitle {
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position-x: 60%;
+  }
+  100% {
+    background-position-x: 0%;
+  }
 }
 
 .blob {
@@ -45,15 +148,11 @@ html {
   width: 100vw;
   --time: 20s;
   --amount: 10;
-  --fill: #365217b6;
+  --fill: #353569;
 }
 
 body:hover:not(:focus) .blob {
-  --fill: #37521767 !important;
-}
-
-body:active .blob {
-  --fill: red !important;
+  --fill: #335 !important;
 }
 
 #home {
@@ -62,4 +161,20 @@ body:active .blob {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-}/*# sourceMappingURL=main.css.map */
+}
+
+#toTop {
+  width: 6em;
+  height: 6em;
+  background: var(--color);
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  transition: 0.3s;
+  color: white;
+  text-align: center;
+}
+#toTop.hidden {
+  transform: translateX(111%);
+}
