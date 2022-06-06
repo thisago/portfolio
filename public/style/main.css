@@ -78,6 +78,36 @@
   left: 0.15em;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8888FF transparent;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #8888FF;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #7979E3;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #6F6FD0;
+}
+
 :root {
   --color:#8888ff;
   --color-accent:#8888ff4f;
@@ -96,10 +126,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .title {
   font-size: 4em;
   text-decoration: none !important;
-  background: linear-gradient(to right, #88f, #5656bd, #88f 80%);
+  background: linear-gradient(to right, #b3b3ff, #2b2ba1, #b3b3ff 80%);
   background-position-x: 100%;
   background-size: 500%;
   -webkit-background-clip: text;
@@ -156,7 +190,7 @@ body:hover:not(:focus) .blob {
 }
 
 #home {
-  margin-top: -10em;
+  margin-top: -2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,8 +198,8 @@ body:hover:not(:focus) .blob {
 }
 
 #toTop {
-  width: 6em;
-  height: 6em;
+  width: 5em;
+  height: 5em;
   background: var(--color);
   border-radius: 50%;
   position: fixed;
@@ -174,6 +208,51 @@ body:hover:not(:focus) .blob {
   transition: 0.3s;
   color: white;
   text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+#toTop:hover span {
+  -webkit-animation: flyArrow 0.6s;
+          animation: flyArrow 0.6s;
+}
+@-webkit-keyframes flyArrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  74% {
+    transform: translateY(-100%);
+  }
+  75% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes flyArrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  74% {
+    transform: translateY(-100%);
+  }
+  75% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#toTop span {
+  display: inline-block;
+  line-height: 1.5em;
+  font-size: 3.2em;
 }
 #toTop.hidden {
   transform: translateX(111%);
