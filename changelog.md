@@ -1,8 +1,11 @@
 # Changelog
 
-## Version 0.1.1 (2022/06/06)
+## Version 0.1.2 (2022/06/06)
 
-- Fixed blob size in mobile
+- Fixed blob s-ize in mobile
+- Added a Y limit to blob 
+- Added info to footer
+- fixed footer style
 
 ---
 

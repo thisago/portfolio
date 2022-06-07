@@ -108,18 +108,116 @@
   background-color: #6F6FD0;
 }
 
+.social {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.social .fa:hover {
+  opacity: 0.7;
+}
+.social .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.social .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.social .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.social .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.social .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.social .fa-instagram {
+  background: #125688;
+  color: white;
+}
+.social .fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.social .fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.social .fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.social .fa-android {
+  background: #a4c639;
+  color: white;
+}
+.social .fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+.social .fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+.social .fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+.social .fa-vine {
+  background: #00b489;
+  color: white;
+}
+.social .fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+.social .fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+.social .fa-flickr {
+  background: #f40083;
+  color: white;
+}
+.social .fa-yahoo {
+  background: #430297;
+  color: white;
+}
+.social .fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+.social .fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+.social .fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
 :root {
-  --color:#8888ff;
-  --color-accent:#8888ff4f;
-  --color-bg:#333;
-  --color-bg-secondary:#555;
-  --color-link:#8888ff;
-  --color-secondary:#e20de9;
-  --color-secondary-accent:#e20de94f;
-  --color-shadow:#bbbbbb20;
-  --color-table:#8888ff;
-  --color-text:#f7f7f7;
-  --color-text-secondary:#aaa;
+  --color: #8888ff;
+  --color-accent: #8888ff4f;
+  --color-bg: #333;
+  --color-bg-secondary: #555;
+  --color-link: #8888ff;
+  --color-secondary: #e20de9;
+  --color-secondary-accent: #e20de94f;
+  --color-shadow: #bbbbbb20;
+  --color-table: #8888ff;
+  --color-text: #f7f7f7;
+  --color-text-secondary: #aaa;
 }
 
 html {
@@ -131,9 +229,11 @@ body {
 }
 
 .title {
+  --from: #b3b3ff;
+  --to: #2b2ba1;
   font-size: 4em;
   text-decoration: none !important;
-  background: linear-gradient(to right, #b3b3ff, #2b2ba1, #b3b3ff 80%);
+  background: linear-gradient(to right, var(--from), var(--to), var(--from) 80%);
   background-position-x: 100%;
   background-size: 500%;
   -webkit-background-clip: text;
@@ -142,13 +242,6 @@ body {
   transition: 0.5s;
   font-weight: bold;
   animation: animTitle 10s infinite alternate-reverse ease-in-out;
-}
-.title span {
-  background: url("../image/leaves.jpg");
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  transition: 0.5s;
 }
 @-webkit-keyframes animTitle {
   0% {
@@ -172,10 +265,21 @@ body {
     background-position-x: 0%;
   }
 }
+.title span {
+  background: url("../image/leaves.jpg");
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: 0.5s;
+}
+.title.sub {
+  --from: black;
+  --to: silver;
+}
 
 .blobContainer {
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
   position: absolute;
   pointer-events: none;
@@ -187,6 +291,7 @@ body {
   z-index: -1;
   margin: auto;
   width: 150vw;
+  top: 5em;
   right: -25vw;
   --time: 20s;
   --amount: 10;
@@ -204,7 +309,7 @@ body:hover:not(:focus) .blob {
 }
 
 #home {
-  margin-top: -2vh;
+  margin-top: -10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,5 +375,27 @@ body:hover:not(:focus) .blob {
   font-size: 3.2em;
 }
 #toTop.hidden {
-  transform: translateX(111%);
+  transform: translateX(115%);
+}
+
+.github-fork-ribbon:before {
+  background-color: var(--color-bg);
+}
+
+footer {
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact h3 {
+  color: rgba(255, 255, 255, 0.568627451);
+  margin: 0;
+}
+.contact ul {
+  padding-left: 1em;
+}
+.contact ul li {
+  list-style: none;
 }

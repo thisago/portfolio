@@ -1,19 +1,20 @@
 @use "logo"
 @use "scrollbar"
 @use "media"
+@use "social"
 
 :root
-  --color:#8888ff
-  --color-accent:#8888ff4f
-  --color-bg:#333
-  --color-bg-secondary:#555
-  --color-link:#8888ff
-  --color-secondary:#e20de9
-  --color-secondary-accent:#e20de94f
-  --color-shadow:#bbbbbb20
-  --color-table:#8888ff
-  --color-text:#f7f7f7
-  --color-text-secondary:#aaa
+  --color: #8888ff
+  --color-accent: #8888ff4f
+  --color-bg: #333
+  --color-bg-secondary: #555
+  --color-link: #8888ff
+  --color-secondary: #e20de9
+  --color-secondary-accent: #e20de94f
+  --color-shadow: #bbbbbb20
+  --color-table: #8888ff
+  --color-text: #f7f7f7
+  --color-text-secondary: #aaa
 
 html
   scroll-behavior: smooth
@@ -22,9 +23,11 @@ body
   overflow-x: hidden
 
 .title
+  --from: #b3b3ff
+  --to: #2b2ba1
   font-size: 4em
   text-decoration: none !important
-  background: linear-gradient(to right, #b3b3ff, #2b2ba1, #b3b3ff 80%)
+  background: linear-gradient(to right, var(--from), var(--to), var(--from) 80%)
   background-position-x: 100%
   background-size: 500%
   background-clip: text
@@ -32,13 +35,6 @@ body
   transition: .5s
   font-weight: bold
   animation: animTitle 10s infinite alternate-reverse ease-in-out
-
-  span
-    background: url("../image/leaves.jpg")
-    background-clip: text
-    color: transparent
-    transition: .5s
-
   @keyframes animTitle
     0%
       background-position: 50% 50%
@@ -47,10 +43,19 @@ body
     100%
       background-position-x: 0%
 
+  span
+    background: url("../image/leaves.jpg")
+    background-clip: text
+    color: transparent
+    transition: .5s
+
+  &.sub
+    --from: black
+    --to: silver
 
 .blobContainer
   width: 100vw
-  height: 100vh
+  height: 110vh
   overflow: hidden
   position: absolute
   pointer-events: none
@@ -61,6 +66,7 @@ body
     z-index: -1
     margin: auto
     width: 150vw
+    top: 5em
     right: -25vw
     --time: 20s
     --amount: 10
@@ -71,11 +77,9 @@ body
 
 body:hover:not(:focus) .blob
   --fill: #335 !important
-// body:active .blob
-//   --fill: red !important
 
 #home
-  margin-top: -2vh
+  margin-top: -10vh
   display: flex
   flex-direction: column
   justify-content: center
@@ -97,7 +101,6 @@ body:hover:not(:focus) .blob
 
   -webkit-tap-highlight-color: transparent
 
-  
   &:hover span
     animation: flyArrow .6s
     @keyframes flyArrow
@@ -113,12 +116,25 @@ body:hover:not(:focus) .blob
         transform: translateY(0)
   span
     display: inline-block
-    // background: red
     line-height: 1.5em
-    // padding: 0em .4em
     font-size: 3.2em
-        // 41%
-        //   transform: translateY(100%)
 
   &.hidden
-    transform: translateX(111%)
+    transform: translateX(115%)
+
+.github-fork-ribbon:before
+  background-color: var(--color-bg)
+
+footer
+  padding-top: 0
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+.contact
+  h3
+    color: #ffffff91
+    margin: 0
+  ul
+    padding-left: 1em
+    li
+      list-style: none
