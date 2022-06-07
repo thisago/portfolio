@@ -1,0 +1,22 @@
+
+@mixin screen-xsmall()
+  @media (min-width: 479px)
+    @content 
+@mixin screen-small()
+  @media (min-width: 599px)
+    @content 
+@mixin screen-medium()
+  @media (min-width: 767px)
+    @content 
+@mixin screen-large()
+  @media (min-width: 1024px)
+    @content 
+@mixin screen-largeOnly()
+  @media (min-width: 768px) and (max-width: 1024px)
+    @content 
+@mixin screen-xxl()
+  @media (min-width: 1200px)
+    @content 
+@mixin screen-tall()
+  @media (min-width: 780px)
+    @content 

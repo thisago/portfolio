@@ -1,5 +1,6 @@
 @use "logo"
 @use "scrollbar"
+@use "media"
 
 :root
   --color:#8888ff
@@ -47,16 +48,26 @@ body
       background-position-x: 0%
 
 
-.blob
-  transition: .1s
-  transition: .5s
-  position: absolute
-  z-index: -1
-  margin: auto
+.blobContainer
   width: 100vw
-  --time: 20s
-  --amount: 10
-  --fill: #353569
+  height: 100vh
+  overflow: hidden
+  position: absolute
+  pointer-events: none
+  .blob
+    transition: .1s
+    transition: .5s
+    position: absolute
+    z-index: -1
+    margin: auto
+    width: 150vw
+    right: -25vw
+    --time: 20s
+    --amount: 10
+    --fill: #353569
+    @include media.screen-small
+      width: 100vw
+      right: 0
 
 body:hover:not(:focus) .blob
   --fill: #335 !important
@@ -83,6 +94,9 @@ body:hover:not(:focus) .blob
   text-align: center
   text-decoration: none
   overflow: hidden
+
+  -webkit-tap-highlight-color: transparent
+
   
   &:hover span
     animation: flyArrow .6s

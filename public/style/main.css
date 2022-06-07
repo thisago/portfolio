@@ -173,16 +173,30 @@ body {
   }
 }
 
-.blob {
+.blobContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+}
+.blobContainer .blob {
   transition: 0.1s;
   transition: 0.5s;
   position: absolute;
   z-index: -1;
   margin: auto;
-  width: 100vw;
+  width: 150vw;
+  right: -25vw;
   --time: 20s;
   --amount: 10;
   --fill: #353569;
+}
+@media (min-width: 599px) {
+  .blobContainer .blob {
+    width: 100vw;
+    right: 0;
+  }
 }
 
 body:hover:not(:focus) .blob {
@@ -210,6 +224,7 @@ body:hover:not(:focus) .blob {
   text-align: center;
   text-decoration: none;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 #toTop:hover span {
   -webkit-animation: flyArrow 0.6s;
