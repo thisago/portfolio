@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 0.1.3 (2022/06/09)
+## Version 0.2.0 (2022/06/09)
 
 - Added technologies logo
 - moved all third-party CSSs to `third` dir
@@ -9,6 +9,8 @@
   - Added description
   - Added url to tech website
   - Fixed link click to work well in mobile
+  - Added bootstrap
+  - Added debian
 
 ---
 
