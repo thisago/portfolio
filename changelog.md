@@ -3,6 +3,11 @@
 ## Version 0.1.3 (2022/06/09)
 
 - Added technologies logo
+- moved all third-party CSSs to `third` dir
+- technologies section
+  - Added more
+  - Added description
+  - Added url to tech website
 
 ---
 

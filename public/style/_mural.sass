@@ -1,0 +1,71 @@
+.mural
+  display: flex
+  flex-direction: row
+  // background: #000
+  flex-wrap: wrap
+  align-content: center
+  justify-content: center
+
+  &-cell
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    width: 7em
+    height: 7em
+    list-style: none
+    position: relative
+    margin: 1.5em
+    padding: .5em
+    border-radius: 50%
+    
+    // --balloon-font-size: .75em
+    --balloon-font-size: var(--color)
+
+    &:not(.placeholder)
+      background: var(--color-bg-secondary)
+
+    &__title
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background: var(--color)
+      padding: .2em .5em
+      width: 100%
+      transition: .5s cubic-bezier(.33,.6,.08,1.47)
+      color: var(--color-text)
+      &::before
+        content: " \f35d"
+        font-family: "Font Awesome 6 Free"
+        font-weight: 900
+        position: absolute
+        right: .5em
+        color: var(--color-text)
+      // color: var(--color-bg)
+      
+      // &:hover
+      //   transform: translate(-50%, -50%) translateY(-5em)
+    &:hover &__title:nth-child(even)
+      transform: translate(-50%, -50%) translateY(-5.1em)
+    &:hover &__title:nth-child(odd)
+      transform: translate(-50%, -50%) translateY(5.1em)
+
+    &__img
+      max-width: 80%
+    // background: red
+    // ::before
+    //   content: '▲'
+    //   position: absolute
+    //   transform: scale(1.05)
+    //   background: red
+
+    &.php &__img
+      max-width: 100%
+    &.javascript &__img
+      max-width: 75px
+    &.typescript &__img
+      max-width: 75px
+    &.karax &__img
+      max-width: 75px
+      
