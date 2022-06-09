@@ -8,6 +8,7 @@
   - Added more
   - Added description
   - Added url to tech website
+  - Fixed link click to work well in mobile
 
 ---
 
