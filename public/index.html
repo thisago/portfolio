@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thiago Navarro</title>
 
-  <link rel="stylesheet" href="./style/mvp.min.css">
-  <link rel="stylesheet" href="./style/blobs.min.css">
-  <link rel="stylesheet" href="./style/font-awesome.min.css">
+  <link rel="stylesheet" href="./style/third/mvp.min.css">
+  <link rel="stylesheet" href="./style/third/blobs.min.css">
+  <link rel="stylesheet" href="./style/third/font-awesome.min.css">
+  <link rel="stylesheet" href="./style/third/devicon.min.css">
   <!-- <link rel="stylesheet" href="./style/gh-fork-ribbon.min.css"> -->
   <link rel="stylesheet" href="./style/main.css">
 </head>
@@ -43,21 +44,109 @@
       <header>
         <h1>About Me</h1>
       </header>
+      <main>
+        <p>
+          Fullstack developer from Brazil, 18 young;
+        </p>
+        <p><a href="#technologies">Technologies</a></p>
+      </main>
+    </section>
+    <section id="technologies">
+      <header>
+        <h1>Technologies</h1>
+      </header>
       <aside>
-        <img style="width: 4em" src="https://img.kalunga.com.br/FotosdeProdutos/145081d.jpg" alt="">
-        <h3 style="display:inline">Papelao</h3>
-        <p></p>Card content*</p>
-        <p><small>*with small content</small></p>
+        <header>
+          <div class="logo">
+            <img src="./image/lang/nim.png">
+          </div>
+        </header>
+          <!-- <h2>Nim <sup>Most Used</sup></h2>
+        <p>Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.</p>
+        <p><small>Web, Desktop, IoT, FFI</small></p> -->
       </aside>
       <aside>
-        <h3>Card heading</h3>
-        <p>Card content <sup>with notification</sup></p>
+        <header>
+          <div class="logo">
+            <img src="./image/lang/javascript.svg" />
+          </div>
+        </header>
+          <!-- <h2>Javascript</h2>
+        <p>Javascript I most use for fast developing and prototyping</p>
+        <p><small>Web, Console</small></p> -->
       </aside>
       <aside>
-        <h3>Card heading</h3>
-        <p>Card content</p>
+        <header>
+          <div class="logo">
+            <img src="./image/lang/typescript.svg" />
+          </div>
+        </header>
+          <!-- <h2>Typescript</h2>
+        <p>I not use Typescript anymore because I never liked the <code>node_modules</code>.</p>
+        <p><small>Web</small></p> -->
+      </aside>
+      <aside>
+        <header>
+          <div class="logo">
+            <img src="./image/lang/cplusplus.svg" />
+          </div>
+        </header>
+          <!-- <h2>C++</h2>
+        <p>Often I use for IoT related projects.</p>
+        <p><small>IoT</small></p> -->
+      </aside>
+      <aside>
+        <header>
+          <div class="logo">
+            <img src="./image/lang/php.svg" />
+          </div>
+        </header>
+          <!-- <h2>C++</h2>
+        <p>Often I use for IoT related projects.</p>
+        <p><small>IoT</small></p> -->
+      </aside>
+      <aside>
+        <header>
+          <div class="logo">
+            <img src="./image/lang/arduino.svg" />
+          </div>
+        </header>
+          <!-- <h2>C++</h2>
+        <p>Often I use for IoT related projects.</p>
+        <p><small>IoT</small></p> -->
+      </aside>
+      <aside>
+        <header>
+          <div class="logo">
+            <img src="./image/lang/html5.svg" />
+          </div>
+        </header>
+          <!-- <h2>C++</h2>
+        <p>Often I use for IoT related projects.</p>
+        <p><small>IoT</small></p> -->
+      </aside>
+      <aside>
+        <header>
+          <div class="logo">
+            <img src="./image/lang/css3.svg" />
+          </div>
+        </header>
+          <!-- <h2>C++</h2>
+        <p>Often I use for IoT related projects.</p>
+        <p><small>IoT</small></p> -->
+      </aside>
+      <aside>
+        <header>
+          <div class="logo">
+            <img src="./image/lang/sass.svg" />
+          </div>
+        </header>
+          <!-- <h2>C++</h2>
+        <p>Often I use for IoT related projects.</p>
+        <p><small>IoT</small></p> -->
       </aside>
     </section>
+
     <!-- <hr><
     <section>
       <blockquote>
@@ -65,7 +154,7 @@
         <footer><i>- Attribution</i></footer>
       </blockquote>
     </section>> -->
-    <!-- <hr>
+    <hr>
     <section>
       <table>
         <thead>
@@ -89,8 +178,8 @@
           <td>Cell C2</td>
         </tr>
       </table>
-    </section> -->
-    <!-- <hr>
+    </section>
+    <hr>
     <article>
       <h2>Left-aligned header</h2>
       <p>Left-aligned paragraph</p>
@@ -105,8 +194,8 @@
         <img alt="Stock photo" src="https://via.placeholder.com/1080x500?text=Amazing+stock+photo">
         <figcaption><i>Image caption</i></figcaption>
       </figure>
-    </article> -->
-    <!-- <hr>
+    </article>
+    <hr>
     <div>
       <details>
         <summary>Expandable title</summary>
@@ -123,8 +212,8 @@
 // preformatted code block
               </code>
           </pre>
-    </div> -->
-    <!-- <hr>
+    </div>
+    <hr>
     <section>
       <form>
         <header>
@@ -141,23 +230,23 @@
         <textarea cols="40" rows="5" id="textarea1"></textarea>
         <button type="submit">Submit</button>
       </form>
-    </section> -->
+    </section>
   </main>
   <hr>
   <footer>
-      <div class="contact">
-        <h3>Contact</h3>
-        <ul>
-          <li>Email: <a href="mailto:thiago@oxyoy.com">thiago@oxyoy.com</a></li>
-          <!-- <li>Github: <a href="https://github.com/thisago">thisago</a></li> -->
-        </ul>
-      </div>
-      <div>
-        <a href="#" class="social fa fa-github"></a>
-      </div>
-      <div>
-        This site is open source! <a href="https://github.com/thisago">See in Github</a>
-      </div>
+    <div class="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li>Email: <a href="mailto:thiago@oxyoy.com">thiago@oxyoy.com</a></li>
+        <!-- <li>Github: <a href="https://github.com/thisago">thisago</a></li> -->
+      </ul>
+    </div>
+    <div>
+      <a href="https://github.com/thisago" title="thisago" class="social fa fa-github"></a>
+    </div>
+    <div>
+      This site is open source! <a href="https://github.com/thisago">See in Github</a>
+    </div>
   </footer>
   <script src="./script/main.js" type="module"></script>
 </body>

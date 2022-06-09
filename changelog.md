@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.1.3 (2022/06/09)
+
+- Added technologies logo
+
+---
+
 ## Version 0.1.2 (2022/06/06)
 
 - Fixed blob s-ize in mobile
