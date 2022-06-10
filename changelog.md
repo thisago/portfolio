@@ -1,5 +1,20 @@
 # Changelog
 
+## Version 0.4.0 (2022/06/10)
+
+- Fixed github icon
+- Added license
+- Added todo
+
+---
+
+## Version 0.3.0 (2022/06/10)
+
+- Added more technologies
+- Added the github projects
+
+---
+
 ## Version 0.2.0 (2022/06/09)
 
 - Added technologies logo
