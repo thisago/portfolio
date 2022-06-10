@@ -9,3 +9,10 @@ const checkToTop = () => {
 }
 document.addEventListener("scroll", checkToTop)
 checkToTop()
+
+// new Masonry(document.querySelector('#projects .projects'), {
+//   // options
+//   itemSelector: 'aside',
+//   gutter: 0,
+//   horizontalOrder: true,
+// });

@@ -59,6 +59,7 @@
     <section id="technologies">
       <header>
         <h1>Technologies</h1>
+        <p>Technologies that I use</p>
       </header>
       <main>
         <ul class="mural">
@@ -123,7 +124,7 @@
             class="mural-cell sass">
             <img class="mural-cell__img" src="./image/lang/sass.svg">
             <a title="https://sass-lang.com" href="https://sass-lang.com" target="_blank"
-              class="mural-cell__title">SASS</a>
+              class="mural-cell__title">SASS/SCSS</a>
           </li>
           <li data-balloon-pos="up" data-balloon-length="large"
             aria-label="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
@@ -138,14 +139,37 @@
             <a title="https://github.com/karaxnim/karax" href="https://github.com/karaxnim/karax" target="_blank"
               class="mural-cell__title">Karax</a>
           <li data-balloon-pos="up" data-balloon-length="large"
-            aria-label="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins." class="mural-cell bootstrap">
-            <img class="mural-cell__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+            aria-label="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."
+            class="mural-cell bootstrap">
+            <img class="mural-cell__img"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
             <a title="https://getbootstrap.com" href="https://getbootstrap.com" target="_blank"
               class="mural-cell__title">Bootstrap</a>
           </li>
           <li data-balloon-pos="up" data-balloon-length="large"
-            aria-label="The universal operating system" class="mural-cell bootstrap">
-            <img class="mural-cell__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg">
+            aria-label="MySQL is an open-source relational database management system" class="mural-cell mysql">
+            <img class="mural-cell__img" src="./image/lang/mysql.png">
+            <a title="https://mariadb.org" href="https://mariadb.org" target="_blank"
+              class="mural-cell__title">MySQL</a>
+          </li>
+          <li data-balloon-pos="up" data-balloon-length="large"
+            aria-label="SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine"
+            class="mural-cell mariadb">
+            <img class="mural-cell__img" src="./image/lang/mariadb.webp">
+            <a title="https://mariadb.org" href="https://mariadb.org" target="_blank"
+              class="mural-cell__title">MariaDB</a>
+          </li>
+          <li data-balloon-pos="up" data-balloon-length="large"
+            aria-label="SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine"
+            class="mural-cell sqlite">
+            <img class="mural-cell__img" src="./image/lang/sqlite.webp">
+            <a title="https://www.sqlite.org" href="https://www.sqlite.org" target="_blank"
+              class="mural-cell__title">SQLite</a>
+          </li>
+          <li data-balloon-pos="up" data-balloon-length="large" aria-label="The universal operating system"
+            class="mural-cell bootstrap">
+            <img class="mural-cell__img"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg">
             <a title="https://www.debian.org" href="https://www.debian.org" target="_blank"
               class="mural-cell__title">Debian</a>
           </li>
@@ -153,15 +177,44 @@
         </ul>
       </main>
     </section>
-
     <hr>
-    <section>
+    <section id="projects">
+      <header>
+        <h3>Projects</h3>
+        <p>Projects fetched from Github</p>
+      </header>
+      <main>
+        <div class="projects">
+          <aside>
+            <h3>duckduckgo</h3>
+            <p>Nim lib to search in Duckduckgo</p>
+            <div class="tags">
+              <span>scraper</span><span>library</span><span>nim</span><span>duckduckgo</span><span>nim-lang</span><span>duckduckgo-scraper</span>
+            </div>
+            <div class="meta">
+              <span class="data language">Nim</span>
+              <span class="data stars">2</span>
+              <span class="data license">MIT</span>
+            </div>
+          </aside>
+          <aside>
+            <h3>Card heading</h3>
+            <p>Card content <sup>with notification</sup></p>
+          </aside>
+          <aside>
+            <h3>Card heading</h3>
+            <p>Card content</p>
+          </aside>
+        </div>
+      </main>
+    </section>
+    <!-- <section>
       <blockquote>
         "Quote"
         <footer><i>- Attribution</i></footer>
       </blockquote>
-    </section>
-    <hr>
+    </section> -->
+    <!-- <hr>
     <section>
       <table>
         <thead>
@@ -185,8 +238,8 @@
           <td>Cell C2</td>
         </tr>
       </table>
-    </section>
-    <hr>
+    </section> -->
+    <!-- <hr>
     <article>
       <h2>Left-aligned header</h2>
       <p>Left-aligned paragraph</p>
@@ -219,8 +272,8 @@
 // preformatted code block
               </code>
           </pre>
-    </div>
-    <hr>
+    </div> -->
+    <!-- <hr>
     <section>
       <form>
         <header>
@@ -237,7 +290,7 @@
         <textarea cols="40" rows="5" id="textarea1"></textarea>
         <button type="submit">Submit</button>
       </form>
-    </section>
+    </section> -->
   </main>
   <hr>
   <footer>
@@ -255,6 +308,8 @@
       This site is open source! <a href="https://github.com/thisago">See in Github</a>
     </div>
   </footer>
+  <script src="./script/third/masonry.pkgd.min.js"></script>
+  <script src="./script/projects/projects.js" type="module"></script>
   <script src="./script/main.js" type="module"></script>
 </body>
 
