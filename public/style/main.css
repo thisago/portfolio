@@ -391,10 +391,6 @@ body:hover:not(:focus) .blob {
   transform: translateX(115%);
 }
 
-.github-fork-ribbon:before {
-  background-color: var(--color-bg);
-}
-
 footer {
   padding-top: 0;
   display: flex;
