@@ -1,5 +1,16 @@
 # Changelog
 
+## Version 0.5.0 (2022/06/10)
+
+- Added pulse animation to target project
+- About me
+  - Added interests
+  - Added motivation
+- Added Git to technologies
+- Added no js projects view
+
+---
+
 ## Version 0.4.0 (2022/06/10)
 
 - Fixed github icon
@@ -25,7 +36,7 @@
   - Added url to tech website
   - Fixed link click to work well in mobile
   - Added bootstrap
-  - Added debian
+  - Added Debian
 
 ---
 

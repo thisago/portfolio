@@ -1,0 +1,36 @@
+#toTop
+  width: 5em
+  height: 5em
+  background: var(--color)
+  border-radius: 50%
+  position: fixed
+  right: 10px
+  bottom: 10px
+  transition: .3s
+  color: white
+  text-align: center
+  text-decoration: none
+  overflow: hidden
+  z-index: 9999
+  -webkit-tap-highlight-color: transparent
+
+  &:hover span
+    animation: flyArrow .6s
+    @keyframes flyArrow
+      0%
+        transform: translateY(0)
+      50%
+        transform: translateY(-100%)
+      74%
+        transform: translateY(-100%)
+      75%
+        transform: translateY(100%)
+      100%
+        transform: translateY(0)
+  span
+    display: inline-block
+    line-height: 1.5em
+    font-size: 3.2em
+
+  &.hidden
+    transform: translateX(115%)

@@ -6,6 +6,7 @@ const user = "thisago"
 
 const projects = await getProjects(user)
 const container = document.querySelector("#projects .projects")
+
 container.innerHTML = ""
 
 let scrollTo = null
@@ -16,6 +17,10 @@ projects.map((project) => {
   container.append(el)
   if (window.location.hash.slice(1) == project.id) scrollTo = el
 })
+
+const updateStatus = document.querySelector(".updateStatus")
+updateStatus.innerText = updateStatus.dataset.updated
+
 
 if (scrollTo) setTimeout(() => {
   scrollTo.scrollIntoView()

@@ -4,7 +4,7 @@
   flex-direction: row
   flex-wrap: wrap
   min-width: 95vw
-  max-height: 70vh
+  max-height: 80vh
   transform: translateX(-50%)
   left: 50%
   position: relative
@@ -29,8 +29,12 @@
     transition: .5s
 
     &:target
-      box-shadow: 0 0 1em var(--color)
-      transform: translate(.5em, .5em)
+      animation: pulseShadow 2s infinite alternate-reverse ease-in-out
+      @keyframes pulseShadow
+        from
+          box-shadow: 0 0 .2em var(--color)
+        to
+          box-shadow: 0 0 1em var(--color)
 
     .tags
       display: flex
