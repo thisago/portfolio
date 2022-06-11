@@ -15,7 +15,7 @@ export default function projectElement(project, langColor) {
   aside.innerHTML = `<h3><a target="_blank" href="${project.html_url}">${
     project.name
   }</a></h3>
-<p>${project.description}</p>
+<p>${project.description || ""}</p>
 ${
   project.homepage
     ? `
@@ -47,8 +47,10 @@ ${
     <span class="data license">${project.license.spdx_id}</span>
   </div>
 </div>
-<div class="updated">
+<div class="dates">
   <small>Updated ${timeSince(new Date(project.updated_at))} ago</small>
+  <span></span>
+  <small>Created ${timeSince(new Date(project.created_at))} ago</small>
 </div>`
   return aside
 }

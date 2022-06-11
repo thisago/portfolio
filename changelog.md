@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 0.6.0 (2022/06/11)
+
+- Ordered projects by last updated
+- Added fetched repos count
+- Changed the projects subtitle
+- Fixed the project description drawing
+- Added repo creation date
+
+---
+
 ## Version 0.5.1 (2022/06/11)
 
 - Technology interest is a link that goes to `#technologies` section

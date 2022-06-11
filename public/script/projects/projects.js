@@ -18,8 +18,9 @@ projects.map((project) => {
   if (window.location.hash.slice(1) == project.id) scrollTo = el
 })
 
+
 const updateStatus = document.querySelector(".updateStatus")
-updateStatus.innerText = updateStatus.dataset.updated
+updateStatus.innerHTML = `Fetched from Github <span class>${projects.length}</span> projects.`
 
 
 if (scrollTo) setTimeout(() => {
