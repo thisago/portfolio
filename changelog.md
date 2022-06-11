@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.0.0 (2022/06/11)
+
+- Added local storage time based cache that leasts 10 minutes, if exceeds the
+  time download again
+
+---
 ## Version 0.6.0 (2022/06/11)
 
 - Ordered projects by last updated
