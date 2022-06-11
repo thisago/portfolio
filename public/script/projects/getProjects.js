@@ -16,7 +16,7 @@ export default async function getProjects(
   max = 100,
   page = 1,
   type = "owner",
-  sort = "updated",
+  sort = "pushed",
   forceFetch = false,
   storageLife = 10 * 60
 ) {
@@ -55,7 +55,7 @@ async function fetchProjects(
   max = 100,
   page = 1,
   type = "owner",
-  sort = "updated"
+  sort = "pushed"
 ) {
   return JSON.stringify(
     await (

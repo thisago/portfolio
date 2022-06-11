@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.0.3 (2022/06/11)
+
+- Fixed Github API sort from `updated` to `pushed`
+
+---
+
 ## Version 1.0.2 (2022/06/11)
 
 - Minified the fetched data from Github to save space in local storage
