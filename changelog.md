@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 0.5.1 (2022/06/11)
+
+- Technology interest is a link that goes to `#technologies` section
+- Removed static Github data intended to test
+
+---
+
 ## Version 0.5.0 (2022/06/10)
 
 - Added pulse animation to target project
@@ -43,7 +50,7 @@
 ## Version 0.1.2 (2022/06/06)
 
 - Fixed blob s-ize in mobile
-- Added a Y limit to blob 
+- Added a Y limit to blob
 - Added info to footer
 - fixed footer style
 
