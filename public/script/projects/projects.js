@@ -6,7 +6,7 @@ const user = "thisago"
 
 const projects = await getProjects(user)
 const container = document.querySelector("#projects .projects")
-console.log(projects);
+
 container.innerHTML = ""
 
 let scrollTo = null
