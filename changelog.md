@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.0.2 (2022/06/11)
+
+- Minified the fetched data from Github to save space in local storage
+
+---
+
 ## Version 1.0.1 (2022/06/11)
 
 - Changed `updated_at` to `pushed_at`

@@ -57,9 +57,11 @@ async function fetchProjects(
   type = "owner",
   sort = "updated"
 ) {
-  return await (
-    await fetch(
-      `https://api.github.com/users/${user}/repos?per_page=${max}&page=${page}&type=${type}&sort=${sort}`
-    )
-  ).text()
+  return JSON.stringify(
+    await (
+      await fetch(
+        `https://api.github.com/users/${user}/repos?per_page=${max}&page=${page}&type=${type}&sort=${sort}`
+      )
+    ).json()
+  )
 }
