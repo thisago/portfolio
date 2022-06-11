@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 1.0.1 (2022/06/11)
+
+- Changed `updated_at` to `pushed_at`
+- Fixed fetching
+- removed debug alert
+
+---
+
 ## Version 1.0.0 (2022/06/11)
 
 - Added local storage time based cache that leasts 10 minutes, if exceeds the
@@ -83,3 +91,7 @@
 ## Version 0.1.0 (2022/04/30)
 
 - copy from ECOleta
+- 
+Eu tenho mais [^1] pra dizer.
+
+[^1]: diga aqui.	

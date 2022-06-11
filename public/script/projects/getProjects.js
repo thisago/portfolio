@@ -27,10 +27,7 @@ export default async function getProjects(
     ),
     nowTime = new Date()
   if (!currentData) willFetch = true
-  if (nowTime > limitDataTime) {
-    alert("Exceeded time")
-    willFetch = true
-  }
+  if (nowTime > limitDataTime) willFetch = true
 
   if (willFetch) {
     localStorage.setItem(
@@ -60,8 +57,9 @@ async function fetchProjects(
   type = "owner",
   sort = "updated"
 ) {
-  alert("fetched")
-  return await fetch(
-    `https://api.github.com/users/${user}/repos?per_page=${max}&page=${page}&type=${type}&sort=${sort}`
-  )
+  return await (
+    await fetch(
+      `https://api.github.com/users/${user}/repos?per_page=${max}&page=${page}&type=${type}&sort=${sort}`
+    )
+  ).text()
 }

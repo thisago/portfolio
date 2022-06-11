@@ -48,7 +48,7 @@ ${
   </div>
 </div>
 <div class="dates">
-  <small>Updated ${timeSince(new Date(project.updated_at))} ago</small>
+  <small>Updated ${timeSince(new Date(project.pushed_at))} ago</small>
   <span></span>
   <small>Created ${timeSince(new Date(project.created_at))} ago</small>
 </div>`
