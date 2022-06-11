@@ -5,6 +5,7 @@
 - Changed `updated_at` to `pushed_at`
 - Fixed fetching
 - removed debug alert
+- Added rounded borders to Github icon in footer
 
 ---
 
