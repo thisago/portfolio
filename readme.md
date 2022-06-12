@@ -21,4 +21,4 @@ _Projects section_
 
 ## License
 
-MIT
+GPL-3
