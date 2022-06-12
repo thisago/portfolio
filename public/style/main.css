@@ -107,13 +107,16 @@
   max-width: 100%;
 }
 .technologies-cell.javascript .technologies-cell__img {
-  max-width: 75px;
+  max-width: 5em;
 }
 .technologies-cell.typescript .technologies-cell__img {
-  max-width: 75px;
+  max-width: 5em;
 }
 .technologies-cell.karax .technologies-cell__img {
-  max-width: 75px;
+  max-width: 5em;
+}
+.technologies-cell.puppeteer .technologies-cell__img {
+  max-width: 4em;
 }
 
 .projects {

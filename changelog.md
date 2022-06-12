@@ -1,6 +1,12 @@
 # Changelog
 
-## Version 1.1.0 (2022/06/11)
+## Version 1.2.0 (2022/06/12)
+
+- Added Puppeteer
+
+---
+
+## Version 1.1.0 (2022/06/12)
 
 - Added more interests
 - Removed forks from repos count
