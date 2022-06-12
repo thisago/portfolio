@@ -10,19 +10,18 @@ const container = document.querySelector("#projects .projects")
 container.innerHTML = ""
 
 let scrollTo = null
-projects.map((project) => {
+let reposCount = 0
+
+projects.map(async (project) => {
   if (project.fork) return
   if (!project.language) return
   const el = projectElement(project, languagesColor[project.language].color)
   container.append(el)
+  reposCount += 1
   if (window.location.hash.slice(1) == project.id) scrollTo = el
 })
 
-
 const updateStatus = document.querySelector(".updateStatus")
-updateStatus.innerHTML = `Fetched from Github <span class>${projects.length}</span> projects.`
+updateStatus.innerHTML = `Fetched from Github <span class>${reposCount}</span> projects.`
 
-
-if (scrollTo) setTimeout(() => {
-  scrollTo.scrollIntoView()
-}, 600);
+if (scrollTo) setTimeout(() => scrollTo.scrollIntoView(), 600)

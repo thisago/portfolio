@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 1.1.0 (2022/06/11)
+
+- Added more interests
+- Removed forks from repos count
+
+---
+
 ## Version 1.0.3 (2022/06/11)
 
 - Fixed Github API sort from `updated` to `pushed`
