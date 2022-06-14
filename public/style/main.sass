@@ -11,7 +11,7 @@
   --color-bg: #333
   --color-bg-secondary: #555
   --color-link: #8888ff
-  --color-secondary: #a2b8c2
+  --color-secondary: #acace2
   --color-secondary-accent: #e20de94f
   --color-shadow: #bbbbbb20
   --color-table: #8888ff
@@ -67,15 +67,15 @@ body
     position: absolute
     z-index: -1
     margin: auto
-    width: 150vw
+    width: 100vw
+    right: 0
     top: 5em
-    right: -25vw
     --time: 20s
     --amount: 10
     --fill: #353569
-    @include media.screen-small
-      width: 100vw
-      right: 0
+    @include media.screen-medium
+      width: 150vw
+      right: -25vw
 
 body:hover:not(:focus) .blob
   --fill: #335 !important

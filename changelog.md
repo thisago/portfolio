@@ -1,5 +1,13 @@
 # Changelog
 
+## Pre-version 1.3.0 (2022/06/14)
+
+- Removed `devicon.min.css`
+- Added CV (incomplete)
+- Fixed media queries
+
+---
+
 ## Version 1.2.0 (2022/06/12)
 
 - Added Puppeteer

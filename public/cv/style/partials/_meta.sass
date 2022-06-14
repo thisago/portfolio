@@ -1,0 +1,27 @@
+.meta
+  display: flex
+  flex-direction: column
+  padding: 1em
+  & > div
+    min-width: max-content
+    word-break: keep-all
+    display: flex
+    align-items: center
+
+    &:before
+      font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands"
+      font-size: 1.5em
+      font-weight: 600
+      margin-right: .5em
+      color: var(--color-text)
+
+  .telegram:before
+    content: "\f2c6"
+  .github:before
+    content: "\f09b"
+  .location:before
+    content: "\f3c5"
+  .cellphone:before
+    content: "\f3cf"
+  .email:before
+    content: "\40"
