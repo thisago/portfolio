@@ -1,16 +1,21 @@
 .progress
   --lvl: 1
   --i: 1
+  $border-radius: 2em
+  // $border-radius: 0 2em 2em 0
+
   width: 100%
   height: 1em
-  // border: .1em solid var(--color)
   position: relative
-  // overflow: hidden
-  border-radius: 2em
   background: var(--color-secondary)
+  border-radius: $border-radius
 
   &:before
-    border-radius: 2em
+    $delay: .5s
+    // $curve: 0.76, 1, 0.24,-0.07
+    $curve: 0.4, 0, 1, 1
+
+    border-radius: $border-radius
     position: absolute
     top: 0
     left: 0
@@ -18,16 +23,10 @@
     width: 0
     height: 100%
     background: var(--color)
-    // transition: 0.5s
-    animation: anim 1s calc(.3s * var(--i)) forwards ease-in-out
+    animation: anim 1s calc((-#{$delay} * var(--lvl)) + (#{$delay} * 11)) forwards cubic-bezier(#{$curve}) // ease-out
+    // animation: anim 1s calc(#{$delay} * var(--i)) forwards cubic-bezier(#{$curve}) // ease-out
     @keyframes anim
       from
         width: 0
       to
         width: calc(10% * var(--lvl))
-
-// body.started .progress:before
-//   width: calc(10% * var(--lvl))
-
-.skills
-  width: 90%

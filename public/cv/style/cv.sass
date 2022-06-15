@@ -14,22 +14,52 @@ body
   display: flex
   flex-direction: row
   padding: 2em
+  // padding-left: 0
   box-shadow: 0 0 .3em var(--color)
+  // padding: 0
   @include media.screen-large
     flex-direction: column
+    // padding: 0
     & > header
       border-right: none !important
       border-bottom: .1em solid var(--color)
-    
+      min-width: 100%
+      padding: 0 0 1em 0 !important
+      // padding-bottom: 1em !important
 
   & > header
-    // box-shadow: .3em 0 .3em var(--color)
     border-right: .1em solid var(--color)
     max-width: 20em
-    display: flex
-    flex-direction: column
-    align-items: center
     padding: 0
+    text-align: center
+    padding: 2em
+    padding-left: 0
+    .skills
+      padding-top: 1em
+      &__skill
+        position: relative
+        margin: 1em
+        // overflow: hidden
+        .progress
+          height: 1.5em
+
+        &-name
+          font-size: 1.2em
+          color: var(--color-secondary)
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          z-index: 10000
+          font-weight: bold
+        &.inverse > *
+          color: var(--color) !important
+
+    .separation-title
+      font-size: 2em
+      background: var(--color-accent)
+      width: 100%
+      margin: 2em 0 0 0
 
     .name
       display: flex
@@ -44,8 +74,10 @@ body
       max-width: 10em
       
   & > main
+    // padding-top: 0
     header
       display: flex
       justify-content: space-between
       align-items: center
       border-bottom: .1em solid var(--color)
+      margin: 1em

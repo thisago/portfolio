@@ -118,6 +118,9 @@
 .technologies-cell.puppeteer .technologies-cell__img {
   max-width: 4em;
 }
+.technologies-cell.fish .technologies-cell__img {
+  max-width: 90%;
+}
 
 .projects {
   display: flex;
@@ -323,7 +326,7 @@
   --color-bg: #333;
   --color-bg-secondary: #555;
   --color-link: #8888ff;
-  --color-secondary: #acace2;
+  --color-secondary: #cdcdfc;
   --color-secondary-accent: #e20de94f;
   --color-shadow: #bbbbbb20;
   --color-table: #8888ff;
@@ -374,6 +377,12 @@ body {
   }
   100% {
     background-position-x: 0%;
+  }
+}
+@media print {
+  .title {
+    background: transparent;
+    color: var(--from);
   }
 }
 .title span {

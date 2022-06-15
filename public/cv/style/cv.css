@@ -47,8 +47,8 @@ body h1 {
   width: 100%;
   height: 1em;
   position: relative;
-  border-radius: 2em;
   background: var(--color-secondary);
+  border-radius: 2em;
 }
 .progress:before {
   border-radius: 2em;
@@ -59,8 +59,8 @@ body h1 {
   width: 0;
   height: 100%;
   background: var(--color);
-  -webkit-animation: anim 1s calc(0.3s * var(--i)) forwards ease-in-out;
-          animation: anim 1s calc(0.3s * var(--i)) forwards ease-in-out;
+  -webkit-animation: anim 1s calc((-0.5s * var(--lvl)) + (0.5s * 11)) forwards cubic-bezier(0.4, 0, 1, 1);
+          animation: anim 1s calc((-0.5s * var(--lvl)) + (0.5s * 11)) forwards cubic-bezier(0.4, 0, 1, 1);
 }
 @-webkit-keyframes anim {
   from {
@@ -77,10 +77,6 @@ body h1 {
   to {
     width: calc(10% * var(--lvl));
   }
-}
-
-.skills {
-  width: 90%;
 }
 
 body {
@@ -104,15 +100,46 @@ body {
   .cv > header {
     border-right: none !important;
     border-bottom: 0.1em solid var(--color);
+    min-width: 100%;
+    padding: 0 0 1em 0 !important;
   }
 }
 .cv > header {
   border-right: 0.1em solid var(--color);
   max-width: 20em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 0;
+  text-align: center;
+  padding: 2em;
+  padding-left: 0;
+}
+.cv > header .skills {
+  padding-top: 1em;
+}
+.cv > header .skills__skill {
+  position: relative;
+  margin: 1em;
+}
+.cv > header .skills__skill .progress {
+  height: 1.5em;
+}
+.cv > header .skills__skill-name {
+  font-size: 1.2em;
+  color: var(--color-secondary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  font-weight: bold;
+}
+.cv > header .skills__skill.inverse > * {
+  color: var(--color) !important;
+}
+.cv > header .separation-title {
+  font-size: 2em;
+  background: var(--color-accent);
+  width: 100%;
+  margin: 2em 0 0 0;
 }
 .cv > header .name {
   display: flex;
@@ -131,4 +158,5 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.1em solid var(--color);
+  margin: 1em;
 }

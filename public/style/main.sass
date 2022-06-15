@@ -11,7 +11,7 @@
   --color-bg: #333
   --color-bg-secondary: #555
   --color-link: #8888ff
-  --color-secondary: #acace2
+  --color-secondary: #cdcdfc
   --color-secondary-accent: #e20de94f
   --color-shadow: #bbbbbb20
   --color-table: #8888ff
@@ -44,6 +44,10 @@ body
       background-position-x: 60%
     100%
       background-position-x: 0%
+  @media print
+    background: transparent
+    color: var(--from)
+
 
   span
     background: url("../image/leaves.jpg")
