@@ -3,8 +3,10 @@
 ## Pre-version 1.3.0 (2022/06/16)
 
 - Added timeline sample
+- Added first point in timeline
 
 ---
+
 ## Pre-version 1.3.0 (2022/06/15)
 
 - Changed secondary color

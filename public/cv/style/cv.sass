@@ -3,7 +3,10 @@
 @use "partials/fixes"
 @use "partials/progress"
 @use "partials/timeline"
-  
+
+*
+  box-sizing: border-box
+
 body
   display: flex
   justify-content: center
@@ -14,7 +17,7 @@ body
 .cv
   display: flex
   flex-direction: row
-  padding: 2em
+  padding: 2em 0px 2em 2em
   // padding-left: 0
   box-shadow: 0 0 .3em var(--color)
   // padding: 0
@@ -82,3 +85,12 @@ body
       align-items: center
       border-bottom: .1em solid var(--color)
       margin: 1em
+    .separation-title
+      font-size: 2em
+      background: var(--color-accent)
+      width: 100%
+      margin: 2em 0 0 0
+      padding: 0 2em
+
+  footer, header, main
+    max-width: 120em

@@ -4,8 +4,8 @@
   --primary-color: var(--color)
   --accent-color: var(--color-text)
   position: relative
-  max-width: 1200px
-  margin: 0 auto
+  max-width: 110em
+  margin: 4em auto
   *
     box-sizing: border-box
   &::after
@@ -26,6 +26,7 @@
     background-color: inherit
     width: 50%
     @include media.screen-xxl
+      margin: 1em 0
       width: 100%
       padding-left: 70px
       padding-right: 25px
@@ -73,10 +74,19 @@
       &:after
         left: -16px
 
+    &-date
+      position: absolute
+      top: -1em
+      left: 3em
+      color: var(--color-text-secondary)
+      @include media.screen-xxl
+        left: 5em
     &-content
-      // &_header
-      //   background: red
       padding: 1em 2em
       background-color: var(--point-color)
       position: relative
       border-radius: 6px
+
+      hr
+        background: var(--point-color)
+        margin: 1em 0

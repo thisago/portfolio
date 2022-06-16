@@ -84,8 +84,8 @@ body h1 {
   --primary-color: var(--color);
   --accent-color: var(--color-text);
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 110em;
+  margin: 4em auto;
 }
 .timeline * {
   box-sizing: border-box;
@@ -113,6 +113,7 @@ body h1 {
 }
 @media only screen and (max-width: 1200px) {
   .timeline__point {
+    margin: 1em 0;
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
@@ -170,11 +171,30 @@ body h1 {
 .timeline__point:nth-child(even):after {
   left: -16px;
 }
+.timeline__point-date {
+  position: absolute;
+  top: -1em;
+  left: 3em;
+  color: var(--color-text-secondary);
+}
+@media only screen and (max-width: 1200px) {
+  .timeline__point-date {
+    left: 5em;
+  }
+}
 .timeline__point-content {
   padding: 1em 2em;
   background-color: var(--point-color);
   position: relative;
   border-radius: 6px;
+}
+.timeline__point-content hr {
+  background: var(--point-color);
+  margin: 1em 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -188,7 +208,7 @@ body {
 .cv {
   display: flex;
   flex-direction: row;
-  padding: 2em;
+  padding: 2em 0px 2em 2em;
   box-shadow: 0 0 0.3em var(--color);
 }
 @media only screen and (max-width: 1024px) {
@@ -257,4 +277,14 @@ body {
   align-items: center;
   border-bottom: 0.1em solid var(--color);
   margin: 1em;
+}
+.cv > main .separation-title {
+  font-size: 2em;
+  background: var(--color-accent);
+  width: 100%;
+  margin: 2em 0 0 0;
+  padding: 0 2em;
+}
+.cv footer, .cv header, .cv main {
+  max-width: 120em;
 }
