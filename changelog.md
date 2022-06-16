@@ -4,6 +4,8 @@
 
 - Added timeline sample
 - Added first point in timeline
+- Fixed progress bars in print mode
+- Fixed separation title style
 
 ---
 

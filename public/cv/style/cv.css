@@ -78,6 +78,13 @@ body h1 {
     width: calc(10% * var(--lvl));
   }
 }
+@media print {
+  .progress:before {
+    -webkit-animation: none;
+            animation: none;
+    width: calc(10% * var(--lvl));
+  }
+}
 
 .timeline {
   --point-color: var(--color-accent);
@@ -210,6 +217,7 @@ body {
   flex-direction: row;
   padding: 2em 0px 2em 2em;
   box-shadow: 0 0 0.3em var(--color);
+  border-radius: 1em;
 }
 @media only screen and (max-width: 1024px) {
   .cv {
@@ -282,8 +290,8 @@ body {
   font-size: 2em;
   background: var(--color-accent);
   width: 100%;
-  margin: 2em 0 0 0;
-  padding: 0 2em;
+  margin: 1em 0 0 0;
+  padding: 0.5em 1em;
 }
 .cv footer, .cv header, .cv main {
   max-width: 120em;
