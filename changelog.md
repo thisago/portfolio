@@ -1,10 +1,7 @@
 # Changelog
 
-## Pre-version 1.3.0 (2022/06/16)
+## Version 1.3.0 (2022/06/16)
 
-- Added timeline sample
-- Added first point in timeline
-- Fixed progress bars in print mode
 - Fixed separation title style
 
 ---
@@ -12,7 +9,6 @@
 ## Pre-version 1.3.0 (2022/06/15)
 
 - Changed secondary color
-- Completed the CV
 - Added fish shell to technologies
 - Fixed typo
 - Added a title fix for printing
@@ -22,7 +18,6 @@
 ## Pre-version 1.3.0 (2022/06/14)
 
 - Removed `devicon.min.css`
-- Added CV (incomplete)
 - Fixed media queries
 
 ---
