@@ -16,8 +16,9 @@ _Projects section_
 ## TODO
 
 - [x] Added my interests
-- [ ] Add a link outside of each project to target it on click without js
+- [ ] Add a link outside of each project element to target it ID on click without js
 - [ ] Add what I've worked
+- [ ] Optional expanding of CV timeline (because it is too large)
 
 ## License
 
