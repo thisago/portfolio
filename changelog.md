@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.3.1 (2022/06/20)
+
+- Changed duplicated font awesome pseudo elements to a mixin
+
+---
+
 ## Version 1.3.0 (2022/06/16)
 
 - Fixed separation title style

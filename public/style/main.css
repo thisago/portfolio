@@ -89,7 +89,7 @@
 .technologies-cell__title::before {
   content: "\f35d";
   font-family: "Font Awesome 6 Free";
-  font-weight: 900;
+  font-weight: 600;
   position: absolute;
   right: 0.5em;
   color: var(--color-text);
@@ -201,6 +201,7 @@
   position: relative;
 }
 .projects aside .meta .data::before {
+  content: "";
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
   margin-right: 0.2em;

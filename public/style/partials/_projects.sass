@@ -1,3 +1,4 @@
+@use "icons"
 
 .projects
   display: flex
@@ -64,8 +65,7 @@
         position: relative
 
         &::before
-          font-family: "Font Awesome 6 Free"
-          font-weight: 600
+          @include icons.fa("")
           margin-right: .2em
 
         &.license::before
