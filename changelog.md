@@ -3,6 +3,7 @@
 ## Version 1.3.1 (2022/06/20)
 
 - Changed duplicated font awesome pseudo elements to a mixin
+- Minified some third party libs and minified generated style
 
 ---
 
