@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 1.3.2 (2022/06/21)
+
+- Fixed abstract
+- Added more MVP config variables 
+
+---
+
 ## Version 1.3.1 (2022/06/20)
 
 - Changed duplicated font awesome pseudo elements to a mixin
