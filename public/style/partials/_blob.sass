@@ -1,0 +1,26 @@
+@use "media"
+
+.blobContainer
+  width: 100vw
+  height: 110vh
+  overflow: hidden
+  position: absolute
+  pointer-events: none
+  .blob
+    transition: .1s
+    transition: .5s
+    position: absolute
+    z-index: -1
+    margin: auto
+    width: 100vw
+    right: 0
+    top: 5em
+    --time: 20s
+    --amount: 10
+    --fill: #353569
+    @include media.screen-medium
+      width: 150vw
+      right: -25vw
+
+body:hover:not(:focus) .blob
+  --fill: #335 !important

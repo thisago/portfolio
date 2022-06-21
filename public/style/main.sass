@@ -5,10 +5,11 @@
 @use "partials/projects"
 @use "partials/toTop"
 @use "partials/quote"
+@use "partials/blob"
 
 :root
   --color: #8888ff
-  --color-accent: #8888ff4f
+  --color-accent: #4d4d72
   --color-bg: #333
   --color-bg-secondary: #555
   --color-link: #8888ff
@@ -70,31 +71,6 @@ body
   &.sub
     --from: black
     --to: silver
-
-.blobContainer
-  width: 100vw
-  height: 110vh
-  overflow: hidden
-  position: absolute
-  pointer-events: none
-  .blob
-    transition: .1s
-    transition: .5s
-    position: absolute
-    z-index: -1
-    margin: auto
-    width: 100vw
-    right: 0
-    top: 5em
-    --time: 20s
-    --amount: 10
-    --fill: #353569
-    @include media.screen-medium
-      width: 150vw
-      right: -25vw
-
-body:hover:not(:focus) .blob
-  --fill: #335 !important
 
 #home
   margin-top: -10vh

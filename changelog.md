@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.4.1 (2022/06/21)
+
+- Moved blob to a partial
+
+---
+
 ## Version 1.4.0 (2022/06/21)
 
 - Added a quote
