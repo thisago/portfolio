@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.4.0 (2022/06/21)
+
+- Added a quote
+
+---
+
 ## Version 1.3.2 (2022/06/21)
 
 - Fixed abstract
