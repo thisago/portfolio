@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 1.4.2 (2022/06/22)
+
+- Checking if project has a license
+- async download of projects
+
+---
+
 ## Version 1.4.1 (2022/06/21)
 
 - Moved blob to a partial

@@ -44,7 +44,7 @@ ${
   <div class="right">
     <span class="data stars">${project.stargazers_count}</span>
     <span class="data forks">${project.forks}</span>
-    <span class="data license">${project.license.spdx_id}</span>
+    ${project.license ? "<span class=\"data license\">" + project.license.spdx_id + "</span>" : ""}
   </div>
 </div>
 <div class="dates">
