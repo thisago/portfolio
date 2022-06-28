@@ -8,7 +8,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="user-scalable=0,width=device-width, initial-scale=1.0">
   <title>Thiago Navarro</title>
 
   <link rel="stylesheet" href="./style/third/mvp.min.css">
@@ -208,6 +209,12 @@
             <a title="https://github.com/karaxnim/karax" href="https://github.com/karaxnim/karax" target="_blank"
               class="technologies-cell__title">Karax</a>
           <li data-balloon-pos="up" data-balloon-length="large"
+            aria-label="Fast, unopinionated, minimalist web framework for Node.js"
+            class="technologies-cell karax">
+            <img class="technologies-cell__img" src="./image/tech/express-original.svg">
+            <a title="http://expressjs.com" href="http://expressjs.com" target="_blank"
+              class="technologies-cell__title">Express</a>
+          <li data-balloon-pos="up" data-balloon-length="large"
             aria-label="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."
             class="technologies-cell bootstrap">
             <img class="technologies-cell__img" src="./image/tech/bootstrap.svg">
@@ -282,17 +289,22 @@
   </main>
   <hr>
   <footer>
-    <div class="contact">
-      <h3>Contact</h3>
-      <ul>
-        <li>Email: <a href="mailto:thiago@oxyoy.com">thiago@oxyoy.com</a></li>
-      </ul>
-    </div>
-    <div class="socials">
-      <a href="https://github.com/thisago" title="thisago" class="social fa-brands fa-github"></a>
+    <div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: <a href="mailto:thiago@oxyoy.com">thiago@oxyoy.com</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/thisago" title="thisago" class="social fa-brands fa-github"></a>
+      </div>
+      <div>
+        This site is open source! <a href="https://github.com/thisago/portfolio">See in Github</a>
+      </div>
     </div>
     <div>
-      This site is open source! <a href="https://github.com/thisago/portfolio">See in Github</a>
+      <p>All glory to YHWH</p>
     </div>
   </footer>
   <script src="./script/projects/projects.js" type="module"></script>
