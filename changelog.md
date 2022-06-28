@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 1.5.1 (2022/06/28)
+
+- Added `rel="noopener noreferrer" target="_blank"` to all links
+- Updated the projects "cache" to works without JS
+
+---
+
 ## Version 1.5.0 (2022/06/28)
 
 - Added "All glory to YAHUAH" footer text

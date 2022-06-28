@@ -12,7 +12,7 @@ export default function projectElement(project, langColor) {
   aside.onclick = () => {
     location.hash = project.id
   }
-  aside.innerHTML = `<h3><a target="_blank" href="${project.html_url}">${
+  aside.innerHTML = `<h3><a rel="noopener noreferrer" target="_blank" href="${project.html_url}">${
     project.name
   }</a></h3>
 <p>${project.description || ""}</p>
@@ -20,7 +20,7 @@ ${
   project.homepage
     ? `
 <div class="homepage">
-  <a target="_blank" href="${project.homepage}">${project.homepage}</a>
+  <a rel="noopener noreferrer" target="_blank" href="${project.homepage}">${project.homepage}</a>
 </div>
   `
     : ``
