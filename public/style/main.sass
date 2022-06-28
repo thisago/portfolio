@@ -81,11 +81,31 @@ body
 
 footer
   padding-top: 0
+  padding-bottom: 1em
   display: flex
-  flex-direction: row
-  justify-content: space-between
-  .socials
-    margin: 0 2em
+  flex-direction: column
+  .row
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    div
+      width: 33%
+      &:not(.contact)
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        &.source a
+          margin-left: .5em
+    .socials
+      // margin: 0 2em
+  .glory
+    text-align: center
+    p
+      font-weight: bold
+      color: var(--color-text-secondary)
+      margin: 0
+      padding: 0
 .contact
   h3
     color: #ffffff91

@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 1.5.0 (2022/06/28)
+
+- Added "All glory to YAHUAH" footer text
+- Fixed footer elements alignment
+
+---
+
 ## Version 1.4.2 (2022/06/22)
 
 - Checking if project has a license
