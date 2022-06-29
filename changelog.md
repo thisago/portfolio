@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.5.2 (2022/06/29)
+
+- Fixed padding of Github fetched projects title
+
+---
+
 ## Version 1.5.1 (2022/06/28)
 
 - Added `rel="noopener noreferrer" target="_blank"` to all links
@@ -28,7 +34,7 @@
 ---
 
 ## Version 1.4.0 (2022/06/21)
-~
+
 - Added a quote
 
 ---
