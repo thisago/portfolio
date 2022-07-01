@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 1.5.3 (2022/07/01)
+
+- Changed border-radius
+- Using `--border-radius` var
+- Fixed `projects.sass` border-radius animation
+- Added hover effect in `projects.sass` project
+
+---
+
 ## Version 1.5.2 (2022/06/29)
 
 - Fixed padding of Github fetched projects title

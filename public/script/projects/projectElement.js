@@ -7,31 +7,27 @@
  * @returns {HTMLElement} Aside element
  */
 export default function projectElement(project, langColor) {
+  const id = `project_${project.id}`
   const aside = document.createElement("aside")
-  aside.id = project.id
+  aside.id = id
   aside.onclick = () => {
-    location.hash = project.id
+    location.hash = id
   }
-  aside.innerHTML = `<h3><a rel="noopener noreferrer" target="_blank" href="${project.html_url}">${
-    project.name
-  }</a></h3>
+  aside.innerHTML = `<h3><a rel="noopener noreferrer" target="_blank" href="${project.html_url}">${project.name}</a></h3>
 <p>${project.description || ""}</p>
 ${
-  project.homepage
-    ? `
-<div class="homepage">
-  <a rel="noopener noreferrer" target="_blank" href="${project.homepage}">${project.homepage}</a>
-</div>
-  `
-    : ``
+  project.homepage ? `
+    <div class="homepage">
+      <a rel="noopener noreferrer" target="_blank" href="${project.homepage}">${project.homepage}</a>
+    </div>
+  `.trim() : ``
 }
 
 ${
-  project.topics.length > 0
-    ? `<div class="tags">${
-        "<span>" + project.topics.join("</span><span>") + "</span>"
-      }</div>`
-    : ""
+  project.topics.length > 0 ? `
+    <div class="tags">${
+      "<span>" + project.topics.join("</span><span>") + "</span>"
+    }</div>`.trim() : ""
 }
 
 <div class="meta">
@@ -44,14 +40,17 @@ ${
   <div class="right">
     <span class="data stars">${project.stargazers_count}</span>
     <span class="data forks">${project.forks}</span>
-    ${project.license ? "<span class=\"data license\">" + project.license.spdx_id + "</span>" : ""}
+    ${project.license ?
+      "<span class=\"data license\">" + project.license.spdx_id + "</span>"
+      : ""}
   </div>
 </div>
 <div class="dates">
   <small>Updated ${timeSince(new Date(project.pushed_at))} ago</small>
   <span></span>
   <small>Created ${timeSince(new Date(project.created_at))} ago</small>
-</div>`
+</div>`.trim()
+console.log(aside.innerHTML);
   return aside
 }
 

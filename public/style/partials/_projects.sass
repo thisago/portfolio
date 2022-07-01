@@ -27,14 +27,12 @@
     flex: none
     transition: .5s
     min-width: 3em
+    box-shadow: var(--box-shadow) var(--color-shadow), 0 0 0 var(--color)
 
+    &:hover
+      box-shadow: 0 0 .8em var(--color-shadow), 0 0 0 var(--color)
     &:target
-      animation: pulseShadow 2s infinite alternate-reverse ease-in-out
-      @keyframes pulseShadow
-        from
-          box-shadow: 0 0 .2em var(--color)
-        to
-          box-shadow: 0 0 1em var(--color)
+      box-shadow: 0 0 0 var(--color-shadow), var(--box-shadow) var(--color)
 
     h3
       margin: .3em 0
@@ -50,7 +48,7 @@
         font-size: .8em
         padding: .3em
         margin: .2em
-        border-radius: .5em
+        border-radius: var(--border-radius)
         background: var(--color-secondary)
         color: black
         white-space: nowrap

@@ -16,7 +16,6 @@ _Projects section_
 ## TODO
 
 - [x] Added my interests
-- [ ] Add a link outside of each project element to target it ID on click without js
 - [ ] Add portfolio projects with images
 
 ## License
