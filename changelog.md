@@ -6,6 +6,8 @@
 - Using `--border-radius` var
 - Fixed `projects.sass` border-radius animation
 - Added hover effect in `projects.sass` project
+- Fixed projects element creation
+- Updated the HTML projects cache
 
 ---
 

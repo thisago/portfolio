@@ -50,7 +50,6 @@ ${
   <span></span>
   <small>Created ${timeSince(new Date(project.created_at))} ago</small>
 </div>`.trim()
-console.log(aside.innerHTML);
   return aside
 }
 
