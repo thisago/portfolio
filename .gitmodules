@@ -1,3 +1,6 @@
 [submodule "cv"]
   path = "public/cv"
   url = git@github.com:thisago/cv
+[submodule "cl"]
+  path = "public/cl"
+  url = git@github.com:thisago/cl
