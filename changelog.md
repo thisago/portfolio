@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.6.0 (2022/07/02)
+
+- Added home icon to meta (used in submodules)
+
+---
+
 ## Version 1.5.3 (2022/07/01)
 
 - Changed border-radius
