@@ -6,32 +6,7 @@
 @use "partials/toTop"
 @use "partials/quote"
 @use "partials/blob"
-
-:root
-  --color: #8888ff
-  --color-accent: #4d4d72
-  --color-bg: #333
-  --color-bg-secondary: #555
-  --color-link: #8888ff
-  --color-secondary: #cdcdfc
-  --color-secondary-accent: #e20de94f
-  // --color-shadow: #bbbbbb20
-  --color-shadow: #626262
-  --color-table: #8888ff
-  --color-text: #f7f7f7
-  --color-text-secondary: #aaaaaa
-  --active-brightness: 0.85
-  --border-radius: .5em
-  --box-shadow: 0 0 .4em
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
-  --hover-brightness: 1.2
-  --justify-important: center
-  --justify-normal: left
-  --line-height: 1.5
-  --width-card: 285px
-  --width-card-medium: 24em
-  --width-card-wide: 800px
-  --width-content: 1080px
+@import "partials/colors"
 
 html
   scroll-behavior: smooth
@@ -40,18 +15,16 @@ body
   overflow-x: hidden
 
 .title
-  --from: #b3b3ff
-  --to: #2b2ba1
   font-size: 4em
   text-decoration: none !important
-  background: linear-gradient(to right, var(--from), var(--to), var(--from) 80%)
-  background-position-x: 100%
+  background: linear-gradient(to right, #{$titleFrom}, #{$titleTo}, #{$titleFrom} 80%)
+  background-position-x: 0%
   background-size: 500%
   background-clip: text
   color: transparent
   transition: .5s
   font-weight: bold
-  animation: animTitle 10s infinite alternate-reverse ease-in-out
+  animation: animTitle 10s .5s infinite alternate-reverse ease-in-out
   @keyframes animTitle
     0%
       background-position: 50% 50%
@@ -61,7 +34,7 @@ body
       background-position-x: 0%
   @media print
     background: transparent
-    color: var(--from)
+    color: $titleFrom
 
   span
     background: url("../image/leaves.jpg")
@@ -79,6 +52,12 @@ body
   flex-direction: column
   justify-content: center
   min-height: 100vh
+  text-align: left
+
+  .aboutMore
+    margin-top: 5em
+    text-align: center
+
 
 footer
   padding-top: 0
@@ -109,12 +88,13 @@ footer
       padding: 0
 .contact
   h3
-    color: #ffffff91
+    color: var(--color-text)
     margin: 0
+    opacity: .6
   ul
     padding-left: 1em
     li
       list-style: none
 
 .warning
-  color: #f78282
+  color: var(--color-warning)

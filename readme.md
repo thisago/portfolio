@@ -17,6 +17,7 @@ _Projects section_
 
 - [x] Added my interests
 - [ ] Add portfolio projects with images
+- [ ] Add a button to show email using JS to prevent crawlers extraction
 
 ## License
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 1.8.0 (2022/07/03)
+
+- Changed color pallette
+- Generate sub colors by a base color
+- moved all colors declarations to a partial
+
+---
+
 ## Version 1.7.0 (2022/07/03)
 
 - Added favicon
