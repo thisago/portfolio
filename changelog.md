@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.7.0 (2022/07/03)
+
+- Added favicon
+
+---
+
 ## Version 1.6.0 (2022/07/02)
 
 - Added home icon to meta (used in submodules)
