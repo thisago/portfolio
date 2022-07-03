@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.9.1 (2022/07/03)
+
+- Fixed website URL
+
+---
+
 ## Version 1.9.0 (2022/07/03)
 
 - Added side shadows to projects box
