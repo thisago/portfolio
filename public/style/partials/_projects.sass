@@ -1,115 +1,142 @@
 @use "icons"
 
-.projects
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
+.projects_box
+  position: relative
   min-width: 95vw
   max-height: 80vh
   transform: translateX(-50%)
   left: 50%
-  position: relative
-  justify-content: center
-  align-items: center
-  overflow-y: hidden
-  overflow-x: auto
-  flex: 10 0 auto
+  
+  .projects
+    display: flex
+    min-width: 95vw
+    max-height: 80vh
+    flex-direction: row
+    flex-wrap: wrap
+    position: relative
+    justify-content: center
+    align-items: center
+    overflow-y: hidden
+    overflow-x: auto
+    flex: 10 0 auto
+    flex-direction: column
+    overflow-x: auto
+    scroll-snap-type: x mandatory
+    z-index: 99999
 
-  flex-direction: column
-  overflow-x: auto
-  scroll-snap-type: x mandatory
+    & + .shadow
+      position: absolute
+      height: 100%
+      width: 100%
+      top: 0
+      left: 0
+      &::before, &::after
+        z-index: 9999999
+        content: ""
+        height: 100%
+        width: 2em
+        position: absolute
+        background: linear-gradient(to var(--side), var(--color-bg), transparent)
+      &::before
+        --side: right
+        left: 0
+      &::after
+        --side: left
+        right: 0
 
-  aside
-    margin: 1em
-    flex-shrink: 0
-    height: fit-content
-    scroll-snap-align: center
-    flex: none
-    transition: .5s
-    min-width: 3em
-    box-shadow: var(--box-shadow) var(--color-shadow), 0 0 0 var(--color)
+      
 
-    &:hover
-      box-shadow: 0 0 .8em var(--color-shadow), 0 0 0 var(--color)
-    &:target
-      box-shadow: 0 0 0 var(--color-shadow), var(--box-shadow) var(--color)
+    aside
+      margin: 1em
+      flex-shrink: 0
+      height: fit-content
+      scroll-snap-align: center
+      flex: none
+      transition: .5s
+      min-width: 3em
+      box-shadow: var(--box-shadow) var(--color-shadow), 0 0 0 var(--color)
 
-    h3
-      margin: .3em 0
+      &:hover
+        box-shadow: 0 0 .8em var(--color-shadow), 0 0 0 var(--color)
+      &:target
+        box-shadow: 0 0 0 var(--color-shadow), var(--box-shadow) var(--color)
 
-    .tags
-      display: flex
-      flex-direction: row
-      width: auto
-      flex-wrap: wrap
-      justify-content: center
+      h3
+        margin: .3em 0
 
-      span
-        font-size: .8em
-        padding: .3em
-        margin: .2em
-        border-radius: var(--border-radius)
-        background: var(--color-secondary)
-        color: black
-        white-space: nowrap
+      .tags
+        display: flex
+        flex-direction: row
+        width: auto
+        flex-wrap: wrap
+        justify-content: center
 
-    .meta, .tags
-      margin-top: 1em
+        span
+          font-size: .8em
+          padding: .3em
+          margin: .2em
+          border-radius: var(--border-radius)
+          background: var(--color-secondary)
+          color: black
+          white-space: nowrap
 
-    .meta
-      display: flex
-      flex-direction: row
-      justify-content: space-between
-      .data
-        font-size: .9em
-        margin: 0 .2em
-        position: relative
+      .meta, .tags
+        margin-top: 1em
 
-        &::before
-          @include icons.fa("")
-          margin-right: .2em
+      .meta
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .data
+          font-size: .9em
+          margin: 0 .2em
+          position: relative
 
-        &.license::before
-          content: "\f24e"
-        &.stars::before
-          content: "\f005"
-        &.forks::before
-          content: "\e13b"
-
-        &.language
-          display: flex
-          flex-direction: row
-          align-items: center
-          margin-right: .8em
-          .languageColor
-            width: 1.2em
-            height: 1.2em
-            background: var(--lang-color)
-            border-radius: 50%
+          &::before
+            @include icons.fa("")
             margin-right: .2em
 
-    .dates
-      margin-top: .8em
-      display: flex
-      flex-direction: row
-      justify-content: space-between
-      align-items: center
-      span
-        width: .3em
-        height: .3em
-        background: var(--color)
-        border-radius: 50%
+          &.license::before
+            content: "\f24e"
+          &.stars::before
+            content: "\f005"
+          &.forks::before
+            content: "\e13b"
 
-      small
-        text-shadow: none
-      
-    .homepage
-      position: relative
-      a
-        white-space: nowrap
-        overflow: hidden
-        text-overflow: ellipsis
-        width: 100%
+          &.language
+            display: flex
+            flex-direction: row
+            align-items: center
+            margin-right: .8em
+            .languageColor
+              width: 1.2em
+              height: 1.2em
+              background: var(--lang-color)
+              border-radius: 50%
+              margin-right: .2em
+
+      .dates
+        margin-top: .8em
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        span
+          width: .3em
+          height: .3em
+          background: var(--color)
+          border-radius: 50%
+
+        small
+          text-shadow: none
+        
+      .homepage
+        position: relative
+        a
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+          width: 100%
 
 .updateStatus
   span
