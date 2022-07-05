@@ -1,5 +1,17 @@
 # Changelog
 
+## Version 1.10.1 (2022/07/05)
+
+- Updated images in readme
+
+---
+
+## Version 1.10.0 (2022/07/04)
+
+- Added WordPress to technologies
+
+---
+
 ## Version 1.9.1 (2022/07/03)
 
 - Fixed website URL
