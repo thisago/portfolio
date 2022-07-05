@@ -1,5 +1,17 @@
 # Changelog
 
+## Version 1.11.0 (2022/07/05)
+
+- Added print button to submodules
+- Fixed blob size and position
+- Centered `#home` text
+- Automatically hide the "go to top" button when reaches in footer to be able to
+  read
+- Fixed projects wrong padding
+- Changed the quote to an African proverb
+
+---
+
 ## Version 1.10.1 (2022/07/05)
 
 - Updated images in readme

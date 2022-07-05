@@ -2,6 +2,7 @@
 @import "colors"
 
 .blobContainer
+  min-height: 30em
   width: 100vw
   height: 110vh
   overflow: hidden
@@ -19,8 +20,9 @@
     --amount: 10
     --fill: #{$blobColor}
     @include media.screen-medium
-      width: 150vw
-      right: -25vw
+      width: 160vw
+      right: -30vw
+      margin-top: 3em
 
 body:hover:not(:focus) .blob
   --fill: #{$blobColor_hover} !important

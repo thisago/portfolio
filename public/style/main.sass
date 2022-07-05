@@ -17,19 +17,20 @@ body
 .title
   font-size: 4em
   text-decoration: none !important
-  background: linear-gradient(to right, #{$titleFrom}, #{$titleTo}, #{$titleFrom} 80%)
+  background: linear-gradient(to right, #{$titleFrom}, transparent, #{$titleTo}, transparent, #{$titleFrom})
+  background-color: transparentize($titleTo, 0.5)
   background-position-x: 0%
   background-size: 500%
   background-clip: text
   color: transparent
-  transition: .5s
+  transition: .2s
   font-weight: bold
-  animation: animTitle 10s .5s infinite alternate-reverse ease-in-out
+  animation: animTitle 20s .5s infinite alternate-reverse ease-in-out
   @keyframes animTitle
     0%
-      background-position: 50% 50%
+      background-position-x: 0%
     50%
-      background-position-x: 60%
+      background-position-x: 100%
     100%
       background-position-x: 0%
   @media print
@@ -43,11 +44,14 @@ body
     transition: .5s
 
   &.sub
-    --from: black
-    --to: silver
+    background-color: transparentize($colorAccent, 0.5)
+    font-size: 3.5em
+
+  &:hover
+    background-color: var(--color-bg-secondary)
 
 #home
-  margin-top: -10vh
+  margin-top: -5vh
   display: flex
   flex-direction: column
   justify-content: center
@@ -57,7 +61,6 @@ body
   .aboutMore
     margin-top: 5em
     text-align: center
-
 
 footer
   padding-top: 0
@@ -77,8 +80,11 @@ footer
         align-items: center
         &.source a
           margin-left: .5em
-    .socials
-      // margin: 0 2em
+    @include media.screen-xsmall
+      div
+        width: 50%
+        &.socials
+          display: none
   .glory
     text-align: center
     p
@@ -98,3 +104,14 @@ footer
 
 .warning
   color: var(--color-warning)
+
+section
+  header
+    h1
+      a
+        color: var(--color-text)
+
+#home a
+  text-decoration: none !important
+  &:hover
+    filter: none
