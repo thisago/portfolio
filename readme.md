@@ -1,6 +1,7 @@
 # My Portfolio
 
 ## Images
+<center>
 ![Home](image/home.png)
 _Home section_
 
@@ -11,6 +12,11 @@ _Technologies section_
 ---
 ![Projects](image/projects.png)
 _Projects section_
+
+<!-- ---
+![Lightroom](image/lightroom.png)  
+_Lightroom score_ -->
+</center>
 
 ---
 ## TODO

@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 1.12.0 (2022/07/05)
+
+- Added description meta tag
+- Added alt to technologies images
+- Added animation to swing up the technology title when focused
+- Minified languages colors js file
+- Improved performance, SEO and accessibility
+
+---
+
 ## Version 1.11.0 (2022/07/05)
 
 - Added print button to submodules

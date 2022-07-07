@@ -53,10 +53,8 @@
         right: .5em
         color: var(--color-text)
 
-    &:hover &__title:nth-child(even)
+    &:hover &__title, &__title:focus
       transform: translate(-50%, -50%) translateY(-5.1em)
-    &:hover &__title:nth-child(odd)
-      transform: translate(-50%, -50%) translateY(5.1em)
 
     &__img
       max-width: 80%
