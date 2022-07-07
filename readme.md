@@ -13,9 +13,9 @@ _Technologies section_
 ![Projects](image/projects.png)
 _Projects section_
 
-<!-- ---
+---
 ![Lightroom](image/lightroom.png)  
-_Lightroom score_ -->
+_Lightroom score (average 96.5%)_
 </center>
 
 ---
