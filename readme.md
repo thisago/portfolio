@@ -1,7 +1,7 @@
 # My Portfolio
 
 ## Images
-<center>
+<div align="center">
 
 ![Home](image/home.png)
 _Home section_
@@ -17,7 +17,7 @@ _Projects section_
 ---
 ![Lightroom](image/lightroom.png)  
 _Lightroom score (average 96.5%)_
-</center>
+</div>
 
 ---
 ## TODO
