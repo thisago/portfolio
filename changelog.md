@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.13.0 (2022/07/10)
+
+- Changed urls to a shortened
+
+---
+
 ## Version 1.12.0 (2022/07/05)
 
 - Added description meta tag
